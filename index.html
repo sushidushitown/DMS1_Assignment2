@@ -1,0 +1,96 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <title>
+            Childrens World of Natures Movement
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 20px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Neroli Wesley;Jumi Suzuki Carpenter;Nguyen Nguyen;Ella Ferraretto;Kelly Ga Yi Xiao;C Lee;Phuong Nguyen;Ka Chen Yeo;Michelle Arlene Tan;Pauline Natasha Latidjan;Evelyn Tjiang</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">11;#Neroli Wesley;#16;#Jumi Suzuki Carpenter;#27;#Nguyen Nguyen;#17;#Ella Ferraretto;#15;#Kelly Ga Yi Xiao;#28;#C Lee;#14;#Phuong Nguyen;#13;#Ka Chen Yeo;#26;#Michelle Arlene Tan;#12;#Pauline Natasha Latidjan;#18;#Evelyn Tjiang</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head> Suitable for children of all ages. 
+    <h1>
+        Let's dive into the magic of....natures movement!
+    </h1>
+    <h2>
+        What sound do they make when it moves?
+    </h2>
+    <p>
+        Clicl on an icon to take a listen! 
+    </p>
+    <body style="background-color: rgb(36, 206, 175);">
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+
+            <div class="image-container"><img id="donut1" src="img/Flower_1.png" onmouseover="this.src='img/Flower_2.png';" onmouseout="this.src='img/Flower_1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut2" src="img/Wave_1_1.png" onmouseover="this.src='img/Wave_2_2.png';" onmouseout="this.src='img/Wave_1_1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut3" src="img/Butterfly_1_1.png" onmouseover="this.src='img/Butterfly_2_1.png';" onmouseout="this.src='img/Butterfly_1_1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="donut4" src="img/Bubble_1_1.png" onmouseover="this.src='img/Bubble_2_1.png';" onmouseout="this.src='img/Bubble_1_1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut5" src="img/Fire_1_1.png" onmouseover="this.src='img/Fire_2_2.png';" onmouseout="this.src='img/Fire_1_1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut6" src="img/Leaf_1_1.png" onmouseover="this.src='img/Leaf_2_1.png';" onmouseout="this.src='img/Leaf_1_1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="donut7" src="img/Cloud_1_1.png" onmouseover="this.src='img/Cloud_2_2.png';" onmouseout="this.src='img/Cloud_1_1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut8" src="img/Bee_1_1.png" onmouseover="this.src='img/Bee_2_1.png';" onmouseout="this.src='img/Bee_1_1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut9" src="img/Water_1_1.png" onmouseover="this.src='img/Water_2_1.png';" onmouseout="this.src='img/Water_1_1.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/Flower.mp3");
+            var sound2 = new buzz.sound("sound/Wave.mp3");
+            var sound3 = new buzz.sound("sound/Butterfly.mp3");
+            var sound4 = new buzz.sound("sound/Bubble.mp3");
+            var sound5 = new buzz.sound("sound/Fire.mp3");
+            var sound6 = new buzz.sound("sound/Leaf.mp3");
+            var sound7 = new buzz.sound("sound/Lightning.mp3");
+            var sound8 = new buzz.sound("sound/Bee.mp3");
+            var sound9 = new buzz.sound("sound/Water.mp3");
+
+            window.onload = function() {
+                document.getElementById('donut1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('donut4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('donut5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('donut6').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('donut7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('donut8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('donut9').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
